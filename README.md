@@ -53,10 +53,12 @@ var keys = []
 var re = pathToRegexp('/foo/:bar', keys)
 // re = /^\/foo\/([^\/]+?)\/?$/i
 // keys = [{ name: 'bar', prefix: '/', delimiter: '/', optional: false, repeat: false, pattern: '[^\\/]+?' }]
+```
 Therefore, it’s quite clear that you can use all kinds of Regular Expression madness on your Express Routes. Let’s use this concept to restrict the values that our locale param can take.
+```
 app.get('/:locale(us|uk)', function(req, res, next) {
   res.send('Hello '+ req.params.locale);
-});`
-``
+});
+```
 Now, we see that the we get a valid response only for the locales us and us, because we have used the unary pipe (|) operator to enumerate valid values for the param.
 
