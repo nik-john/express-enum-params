@@ -1,0 +1,32 @@
+{
+  "name": "enum-routes-express",
+  "version": "1.0.0",
+  "description": "Enumerable route parameters in Express JS. Restrict the values that a Route Parameter can have",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nik-john/express-enum-params.git"
+  },
+  "keywords": [
+    "express",
+    "enum",
+    "enumerable",
+    "route",
+    "router",
+    "parameter",
+    "param",
+    "url"
+  ],
+  "author": "Nikhil John <nikhil.john.88@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nik-john/express-enum-params/issues"
+  },
+  "homepage": "https://github.com/nik-john/express-enum-params#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
